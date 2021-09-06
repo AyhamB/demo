@@ -13,3 +13,7 @@ OUTPUT_FOLDER = '/data/output/'
 
 # Log file
 LOG_FILE = "/data/log/demo.log"
+
+API_BASE_URL = "https://covid-api.com/api"
+REPORTS_ENDPOINT = "/reports"
+REPORTS_FULL_URL = API_BASE_URL + REPORTS_ENDPOINT
