@@ -1,16 +1,25 @@
-from flask import Flask, request, jsonify
-import json
+from flask import Flask, jsonify
 import logging
 import uuid
 import pandas as pd
 from .covidApiClient import CovidApiClient
-from datetime import datetime
+import os
 
 
 app = Flask(__name__)
 
 # Read app configurations from config.py
 app.config.from_pyfile('config.py')
+
+# Create any missing files or directories
+if not os.path.exists(app.config['OUTPUT_FOLDER']):
+    os.makedirs(app.config['OUTPUT_FOLDER'])
+
+if not os.path.exists(app.config['LOG_DIR']):
+    os.makedirs(app.config['LOG_DIR'])
+
+file = open(app.config['LOG_FILE'], 'a+')
+
 
 # Log to a file
 logging.basicConfig(filename=app.config['LOG_FILE'], level=logging.DEBUG)

@@ -12,7 +12,8 @@ INPUT_FILE_NAME = '/data/input/countries.csv'
 OUTPUT_FOLDER = '/data/output/'
 
 # Log file
-LOG_FILE = "/data/log/demo.log"
+LOG_DIR = "/data/log/"
+LOG_FILE = LOG_DIR + "demo.log"
 
 API_BASE_URL = "https://covid-api.com/api"
 REPORTS_ENDPOINT = "/reports"
