@@ -1,6 +1,5 @@
 from ...covidApiClient import CovidApiClient
 import pandas as pd
-import json
 
 
 def test_covidApiClientInit():
