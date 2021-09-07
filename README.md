@@ -18,7 +18,7 @@ This endpoint will return the location of the output excel file. Here is a sampl
 
 
 # Getting Started
-This is a dockerized flast application, you need to have docker and docker-compose installed to run it
+This is a dockerized Flask application, you need to have docker and docker-compose installed to run it
 ## Prerequisites
 - **Docker**: Please follow the [official installation](https://docs.docker.com/compose/install/) guide
 - **Docker Compose**: Please follow the [official installation](https://docs.docker.com/get-docker/) guide
@@ -47,7 +47,7 @@ LOG_FILE = "/data/log/demo.log"
 ```
 
 ## Building the application
-From the project root exectute
+From the project root execute
 ```sh
 docker-compose build
 docker-compose up
