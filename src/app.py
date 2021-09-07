@@ -3,7 +3,7 @@ import json
 import logging
 import uuid
 import pandas as pd
-from covidApiClient import CovidApiClient
+from .covidApiClient import CovidApiClient
 from datetime import datetime
 
 
