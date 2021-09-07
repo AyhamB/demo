@@ -1,8 +1,8 @@
 # covid-api demo application
 Demo application using Flask, Docker, and Pytest
 
-# Quick Start
-Close the repo and run 
+# QuickStart
+Clone this repo and run 
 ```sh
 docker-compose build
 docker-compose up
